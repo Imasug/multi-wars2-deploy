@@ -48,6 +48,7 @@
 									<artifactId>project-a</artifactId>
 									<version>${project-a.version}</version>
 									<type>war</type>
+									<destFileName>project-a.war</destFileName>
 								</artifactItem>
 							</artifactItems>
 							<outputDirectory>deployments</outputDirectory>
