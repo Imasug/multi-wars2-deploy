@@ -11,6 +11,14 @@
 		<project-a.version>0.0.1-SNAPSHOT</project-a.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>maven-snapshots</id>
+			<name>maven-snapshots</name>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</repository>
+	</repositories>
+
 	<build>
 		<plugins>
 			<plugin>
