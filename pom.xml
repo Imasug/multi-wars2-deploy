@@ -8,6 +8,7 @@
 
 	<properties>
 		<encoding>UTF-8</encoding>
+		<project-a.version>0.0.1-SNAPSHOT</project-a.version>
 	</properties>
 
 	<build>
@@ -18,6 +19,31 @@
 					<execution>
 						<id>default-jar</id>
 						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.1.2</version>
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>jp.co.ocp.sample</groupId>
+									<artifactId>project-a</artifactId>
+									<version>${project-a.version}</version>
+									<type>war</type>
+								</artifactItem>
+							</artifactItems>
+							<outputDirectory>deployments</outputDirectory>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
