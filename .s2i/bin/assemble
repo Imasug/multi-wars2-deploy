@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo "test"
-
-git --version
+echo "$(git --version)"
 
 #git clone --depth 1 https://github.com/Imasug/multi-wars2.git
 
