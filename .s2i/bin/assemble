@@ -1,0 +1,7 @@
+#!/bin/bash
+
+git clone https://github.com/Imasug/multi-wars2.git
+
+mvn clean package -f ./multi-war2/pom.xml
+
+cp `find . -name *.war` deployments
