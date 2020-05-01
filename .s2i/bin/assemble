@@ -2,8 +2,8 @@
 
 echo "test"
 
-git clone --depth 1 https://github.com/Imasug/multi-wars2.git
+#git clone --depth 1 https://github.com/Imasug/multi-wars2.git
 
-mvn clean package -f ./multi-war2/pom.xml
+#mvn clean package -f ./multi-war2/pom.xml
 
-cp `find . -name *.war` deployments
+#cp `find . -name *.war` deployments
