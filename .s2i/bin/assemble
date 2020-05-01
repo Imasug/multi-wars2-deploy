@@ -1,5 +1,0 @@
-#!/bin/bash
-
-git clone https://github.com/Imasug/multi-wars2.git
-
-mvn clean package -f multi-wars2/pom.xml
