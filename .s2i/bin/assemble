@@ -1,7 +1,9 @@
 #!/bin/bash
 
-git clone https://github.com/Imasug/multi-wars2.git
+echo "test"
 
-mvn clean package -f ./multi-war2/pom.xml
+#git clone https://github.com/Imasug/multi-wars2.git
 
-cp `find . -name *.war` deployments
+#mvn clean package -f ./multi-war2/pom.xml
+
+#cp `find . -name *.war` deployments
