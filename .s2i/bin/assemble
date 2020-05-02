@@ -7,7 +7,7 @@ if [ -d /tmp/artifacts/.m2 ]; then
   mv /tmp/artifacts/.m2 "$HOME"/
 fi
 
-git clone https://github.com/Imasug/multi-wars2.git
+git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git
 
 mvn clean package -f multi-wars2/pom.xml
 
