@@ -4,7 +4,7 @@
 #
 if [ -d /tmp/artifacts/.m2 ]; then
   echo "---> Restoring build artifacts..."
-  mv /tmp/artifacts/.m2 "$HOME"/
+  mv /tmp/artifacts/.m2/* "$HOME"/.m2
 fi
 
 # Get sources
