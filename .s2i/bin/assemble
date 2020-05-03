@@ -9,7 +9,7 @@ fi
 
 git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git
 
-. /opt/rh/rh-maven35
+. /opt/rh/rh-maven35/enable
 
 mvn clean package -f multi-wars2/pom.xml
 
