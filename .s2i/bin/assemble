@@ -9,6 +9,8 @@ fi
 
 git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git
 
-scl enable rh-maven35 bash && mvn clean package -f multi-wars2/pom.xml
+. /opt/rh/rh-maven35
+
+mvn clean package -f multi-wars2/pom.xml
 
 cp `find . -name *.war` /opt/webserver/webapps/
