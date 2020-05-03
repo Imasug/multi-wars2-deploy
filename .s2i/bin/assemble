@@ -7,10 +7,10 @@ if [ -d /tmp/artifacts/.m2 ]; then
   mv /tmp/artifacts/.m2 "$HOME"/
 fi
 
-echo "${BRANCH}"
+scl enable rh-maven35 bash
 
 git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git
 
 mvn clean package -f multi-wars2/pom.xml
 
-cp `find . -name *.war` /tomcat/webapps/
+cp `find . -name *.war` /opt/webserver/webapps/
