@@ -7,10 +7,14 @@ if [ -d /tmp/artifacts/.m2 ]; then
   mv /tmp/artifacts/.m2 "$HOME"/
 fi
 
-git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git
+# Get sources
+git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git --depth 1
 
+# Activate maven
 . /opt/rh/rh-maven35/enable
 
+# Packaging
 mvn clean package -f multi-wars2/pom.xml
 
+# Move the wars to the deployment directory
 cp `find . -name *.war` /opt/webserver/webapps/
