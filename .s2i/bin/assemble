@@ -14,7 +14,8 @@ git clone -b ${BRANCH} https://github.com/Imasug/multi-wars2.git --depth 1
 . /opt/rh/rh-maven35/enable
 
 # Packaging
-mvn clean package -f multi-wars2/pom.xml
+mvn clean package -f multi-wars2/project-a/pom.xml
+mvn clean package -f multi-wars2/project-b/pom.xml
 
 # Move the wars to the deployment directory
 cp `find . -name *.war` /opt/webserver/webapps/
