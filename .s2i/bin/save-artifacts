@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-if [ -d .m2 ]; then
-    tar cf - .m2
-fi
